@@ -53,3 +53,26 @@ function mathRandom(){
 
     
 }
+
+function exaktColor(){
+
+    var red=Math.round(Math.random() * 255);
+    var green=Math.round(Math.random() * 255);
+    var blue=Math.round(Math.random() * 255);
+
+/*     den långa raden för att få den avrund och random
+var TheRandomNumber = Math.random()*255;
+    var m= Math.floor(TheRandomNumber)
+    console.log(TheRandomNumber)
+ */
+    var rgbVariable = "rgb(" + red +"," + green + "," + blue +")";
+    console.log(rgbVariable)
+    document.body.style.backgroundColor = rgbVariable;
+/*     document.body.style.backgroundColor = rgbVariable;
+    var rgbVariableTwo = "rgb(" + green+ ",222,222)";
+    document.body.style.backgroundColor = rgbVariableTwo;
+    var rgbVariableThree = "rgb(" + blue+ ",222,222)";
+    document.body.style.backgroundColor = rgbVariableThree; */
+}
+/* setInterval(rgbVariable, 1000) */
+
