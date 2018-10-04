@@ -75,4 +75,50 @@ var TheRandomNumber = Math.random()*255;
     document.body.style.backgroundColor = rgbVariableThree; */
 }
 /* setInterval(rgbVariable, 1000) */
+/* #000000 */
+function hexNumber(){
+    var hashtak = "#"
+    var colorOne =randomizeChecking(Math.round(Math.random() *15));   
+    var colorTwo =randomizeChecking(Math.round(Math.random() *15));   
+    var colorThree =randomizeChecking(Math.round(Math.random() *15));   
+    var colorFour =randomizeChecking(Math.round(Math.random() *15));   
+    var colorFive =randomizeChecking(Math.round(Math.random() *15));   
+    var colorSix =randomizeChecking(Math.round(Math.random() *15));
+
+/*     var f = Math.floor(Math.random() *15);       
+    var e = Math.floor(Math.random() *14); 
+    var  d= Math.floor(Math.random() *13);       
+    var f = Math.floor(Math.random() *12); 
+    var f = Math.floor(Math.random() *11);       
+    var f = Math.floor(Math.random() *10);  */
+      
+    var hexColor =  hashtak + colorOne+ colorTwo+colorThree+colorFour+colorFive+colorSix
+    document.body.style.backgroundColor = hexColor;
+    console.log(hexColor)
+
+}
+/* vår value är samma som colorOne, ColorTwo and so on */
+function randomizeChecking(value){
+    if(value == 10){
+        return "A";
+    }
+    else if(value == 11){
+        return "B";
+    }
+    else if(value == 12){
+        return "C";
+    }
+    else if(value == 13){
+        return "D";
+    }
+    else if(value == 14){
+        return "E";
+    }
+    else if(value == 15){
+        return "F"
+    }
+    else{
+        return value
+    }
+}
 
